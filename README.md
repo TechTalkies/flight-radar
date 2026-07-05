@@ -20,6 +20,44 @@ This project is a fork of [Anthony Sturdy's Micro Radar project](https://github.
 - Onboard RGB status LED
 - Simplified hardware requirements
 ---
+## Hardware
+
+- ESP32-S3 Zero
+- 240x240 Round GC9A01 Display
+- Rotary Encoder
+- 3D printed parts
+
+---
+
+## Wiring
+
+### GC9A01 240x240 Round Display
+| ESP32-S3 Zero | Display |
+|----------|----------|
+|GP2|SCL |
+|GP3|SDA |   
+|GP4|DC |   
+|GP5|CS |   
+|GP6|RST |   
+|5V|VCC |   
+|GND|GND |   
+
+### KY-040 Rotary Encoder
+
+| ESP32-S3 Zero | KY-040 |
+|---|---|
+| GP9 | CLK |
+| GP8 | DT |
+| GP7 | SW |
+| 5V | + |
+| GND | GND |
+
+---
+
+![Circuit Diagram](./Images/Circuit.png)
+
+![Schematic Diagram](./Images/Schematic.png)
+---
 ## Flashing the Firmware
 
 ### Option 1: Flash Prebuilt Firmware (Recommended)
